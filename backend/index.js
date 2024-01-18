@@ -6,7 +6,7 @@ const cors = require("cors");
 
 
 router.use(cors())
-router.use(express.json());
+router.use(express.json()); 
 
 router.post('/create-checkout-session', async (req, res) => {
  try {
